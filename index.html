@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NAVY — Playable Board</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NAVY</h1>
+    <div id="turnIndicator" class="turn">Turn: Cyan</div>
+  </header>
+
+  <main>
+    <div id="board" class="board" aria-label="NAVY board"></div>
+    <h2>Pieces Movement</h2>
+    <p>There are eight types of pieces in the board, (Captain, Battleship, Tank, Submarine, Jet, Helicopter, Soldier).</p>
+    <p>Captain Movement: Knight.</p>
+    <p>Battleship Movement: Queen.</p>
+    <p>Tank (Capture but Movement): (Rook but Knight).</p>
+    <p>Submarine (Capture but Movement): (Bishop but Knight).</p>
+    <p>Jet (Capture but Movement): (Knight but Rook).</p>
+    <p>Helicopter (Capture but Movement): (Knight but Bishop).</p>
+    <p>Soldier (Capture but Movement): (1-2 squares forward straight but 1-2 squares forward diagonal).</p>
+    <p>There is promotion logic, they can promote into any piece but a captain, but if it lands on the “H” column then it will automatically promote only into a captain, that is ONLY when the old captain is captured, otherwise it cannot move in the last row IN the “H” column.</p>
+    <h2>Rating Chart</h2>
+    <p>
+      <f>Noob: Shouji Rating = (1-299)</f>
+      <e>Beginner: Shouji Rating = (300-599)</e>
+      <d>Novice: Shouji Rating = (600-899)</d>
+      <c>Intermediate: Shouji Rating = (900-1199)</c>
+      <b>Advanced: Shouji Rating = (1200-1499)</b>
+      <a>Expert: Shouji Rating = (1500-1799)</a>
+      <m>Master: Shouji Rating = (1800-2099)</m>
+      <gm>Grandmaster: Shouji Rating = (2100-2399)</gm>
+      <sgm>Supergrandmaster: Shouji Rating = (2400-2699)</sgm>
+      <hgm>Hypergrandmaster: Shouji Rating = (2700-2999)</hgm>
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
